@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #ff69B4, #ad92d8);
+    font-family: sans-serif;
+}
+
+                /* HEADER SECTION */
+
+header{
+    background: url("logo.png") no-repeat;
+    background-size: cover;
+    height: 45vh;
+    padding: 0.2em 0.5em;
+}
+
+header .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 0;
+}
+
+header .lang-btn{
+  padding: 0.3em 0.8em;
+  border-radius: 2pc;
+  background-color: rgb(133, 223, 223);
+  border: none;
+}
+
+                /* MAIN */
+
+main{
+    margin: 0.9em auto;
+    padding: 0.7em;
+    max-width: 760px;
+}     
+
+div.welcome-banner{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.3em 0.8em;
+    border-radius: 2pc;
+}
+
+div.welcome-banner i{
+    background-color: rgb(167, 163, 167);
+    color: purple;
+    border-radius: 2pc;
+    padding: 0.5em;
+    margin: 0 0.5em 0 -0.6em;
+    font-size: 0.8em;
+}
+
+                        /*ACTIVITY CARDS SECTIONS */
+ 
+section.activity-cards{
+    margin: 1.8em 0 0.1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+section.activity-cards a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+section.activity-cards a:hover{
+    color: rgb(206, 42, 42);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+section.activity-cards .card{
+    background-color: white;
+    width: 4.7pc;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-bottom: 2pc;
+    margin-right: 8px;
+    word-wrap: break-word;
+}
+
+.card .card-icon{
+   border-radius: 0.4em;
+   box-shadow: 0em 0.1em 10px black;
+   position: relative;
+   top: -0.7em;
+   width: 60%;
+   font-size: 1.7em;
+   padding: 0.4em 0.3em;
+}
+
+.card p{
+   font-size: 0.9em;
+   text-align: center;
+   margin: 0;
+   position: relative;
+   top: -0.8em;
+   font-size: 0.9em;
+}
+
+/* ACTIVITY ICONS */
+
+.Invite, .About{
+    color: blue;
+    background-color: rgb(190, 190, 252);
+}
+
+.Miner, .Company{
+    color: rgb(36, 185, 36);
+    background-color: rgb(182, 247, 182);
+}
+
+.Exchange, .Coupon{
+    color: rgb(235, 100, 122);
+    background-color: rgb(252, 220, 225);
+}
+
+.Bonus, .Raffle{
+    color: gold;
+    background-color: rgb(255, 247, 199);
+}
+
+
+                        /*INFO CARDS SECTION */
+
+section.info-section{
+    background-color: white;
+    border-radius: 0.8em 0.8em 0 0;
+}          
+
+.timer-box{
+    padding: 0.4em 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(202, 195, 195);
+}
+
+.timer-box h2{
+    font-size: 1em;
+    text-align: center;
+    color: rgb(47, 47, 107);
+}
+
+.timer-box .flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer-box span{
+   width: 10%;
+}
+
+.time-desc{
+    font-size: 0.75em;
+}
+
+                            /* CRYPTOCURRENCIES SECTION */
+
+section.crypto-currencies{
+    background-color: white;
+    padding: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 0 0 0.8em 0.8em;
+}
+
+div.coin-card{
+    min-width: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    padding: 0 0.8em;
+    margin: 0 0.3em 1em 0;
+}
+
+div.coin-card span.coin-icon{
+    width: 40%;
+    display: flex;
+    gap: 0.1em;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.2em;
+    word-wrap: break-word;
+}
+
+span.coin-icon .coin-name{
+    width: 90%;
+    font-size: 0.4em;
+}
+
+span.coin-value{
+    display: flex;
+    gap: 0.1em;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    color: green;
+}
+
+span.coin-value .percentage-change{
+    font-size: 0.8em;
+}
+
+
+                            /* INVESTMENT MACHINES SECTION */
+
+section.machine-section{
+    margin: 2em 0;
+}
+
+div.machine{
+    background-color: #fff;
+    border-radius: 0.8em;
+    padding-top: 0.9em;
+    color: rgb(77, 75, 75);
+    margin: 2em 0;
+}
+
+div.machine-image{
+   text-align: center;
+}
+
+div.machine-image img{
+   text-align: center;
+   width: 180px;
+}
+
+div.machine > span{
+   margin: 0 0.8em;
+   color: red;
+   font-weight: bolder;
+   background-color: rgb(255, 181, 44);
+   padding: 0.4em 0.4em;
+   border-radius: 0.4em;
+   box-shadow: 0 0 5px black;
+}
+
+div.machine-info{
+    box-shadow: inset 0 1px 10px black;
+    padding: 0.1em 0.8em;
+}
+
+div.machine-info h3{
+    font-size: 0.99em;
+}
+
+div.machine-info p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+div.machine-pay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+    font-size: 1.1em;
+    padding: 0.6em 0.8em;
+}
+
+div.machine-pay button{
+    background-color: darkcyan;
+    font-size: 0.75em;
+    color: white;
+    padding: 0.5em 1.8em;
+    border: none;
+    border-radius: 1pc;
+}
+
+                        /* FOOTER */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #B35AF5;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
