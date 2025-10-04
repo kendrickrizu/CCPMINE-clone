@@ -4,17 +4,18 @@
 
 body{
     margin: 0;
-    background: linear-gradient(to bottom, #ff69B4, #ad92d8);
+    background: linear-gradient(to bottom, #f7489f, #ad92d8);
     font-family: sans-serif;
 }
 
                 /* HEADER SECTION */
 
 header{
-    background: url("logo.png") no-repeat;
+    background: url("images/headerbg.png") no-repeat;
     background-size: cover;
+    background-position: center;
     height: 45vh;
-    padding: 0.2em 0.5em;
+    padding: 0.6em 0.5em;
 }
 
 header .heading{
@@ -23,14 +24,14 @@ header .heading{
     align-items: center;
 }
 
-header h1{
-    margin: 0;
+header img{
+    filter: contrast(900%);
 }
 
 header .lang-btn{
   padding: 0.3em 0.8em;
   border-radius: 2pc;
-  background-color: rgb(133, 223, 223);
+  background-color: rgb(99, 233, 233);
   border: none;
 }
 
@@ -46,7 +47,7 @@ div.welcome-banner{
     display: flex;
     align-items: center;
     background-color: #fff;
-    padding: 0.3em 0.8em;
+    padding: 0.2em 0.8em;
     border-radius: 2pc;
 }
 
@@ -58,6 +59,13 @@ div.welcome-banner i{
     margin: 0 0.5em 0 -0.6em;
     font-size: 0.8em;
 }
+
+div.welcome-banner marquee{
+  color: rgb(44, 44, 44);
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+
 
                         /*ACTIVITY CARDS SECTIONS */
  
@@ -76,7 +84,7 @@ section.activity-cards a{
     transition: 0.3s;
 }
 
-section.activity-cards a:hover{
+section.activity-cards a:hover,section.activity-cards a:focus{
     color: rgb(206, 42, 42);
     font-weight: bolder;
     cursor: pointer;
@@ -84,7 +92,7 @@ section.activity-cards a:hover{
 
 section.activity-cards .card{
     background-color: white;
-    width: 4.7pc;
+    width: 4.5pc;
     text-align: center;
     border-radius: 0.5em;
     margin-bottom: 2pc;
@@ -99,16 +107,15 @@ section.activity-cards .card{
    top: -0.7em;
    width: 60%;
    font-size: 1.7em;
-   padding: 0.4em 0.3em;
+   padding: 0.3em ;
 }
 
 .card p{
-   font-size: 0.9em;
+   font-size: 0.8em;
    text-align: center;
    margin: 0;
    position: relative;
    top: -0.8em;
-   font-size: 0.9em;
 }
 
 /* ACTIVITY ICONS */
@@ -201,6 +208,13 @@ div.coin-card span.coin-icon{
     word-wrap: break-word;
 }
 
+span.coin-icon img{
+    width: 40px;
+    border-radius: 20pc;
+    box-shadow: 0px 0px 0.1em 1px rgb(0, 0, 0);
+}
+
+
 span.coin-icon .coin-name{
     width: 90%;
     font-size: 0.4em;
@@ -255,19 +269,21 @@ div.machine > span{
 }
 
 div.machine-info{
-    box-shadow: inset 0 1px 10px black;
+    box-shadow: inset 0 10px 10px -10px black, inset 0 -10px 10px -10px black ;
     padding: 0.1em 0.8em;
 }
 
 div.machine-info h3{
-    font-size: 0.99em;
+    font-size: 0.95em;
+    font-weight: light;
+    color: rgb(65, 63, 63);
 }
 
 div.machine-info p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
 div.machine-pay{
@@ -300,6 +316,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
 }
 
 footer a{
@@ -310,5 +327,9 @@ footer a{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
+}
+
+footer a:hover, footer a:focus, footer a:first-child{
+    color: greenyellow;
 }
